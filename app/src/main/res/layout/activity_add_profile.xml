@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/first_group" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/abel_regular"
+            android:gravity="center"
+            android:text="Please enter your child’s social media account information "
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/abel_regular"
+            android:gravity="center"
+            android:text="This information will help us to protect your child from online abusive content and cyberharassment"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/white_bg_round_corners2"
+            android:fontFamily="@font/poppins_medium"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:hintTextColor="@color/blue"
+            app:boxStrokeColor="@color/blue"
+
+            android:id="@+id/tl_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:errorIconTint="@color/red"
+            app:errorTextColor="@color/red"
+            app:boxStrokeErrorColor="@color/red"
+            app:boxCornerRadiusTopStart="8dp"
+            app:hintEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/abel_regular"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:textColor="@color/grey"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_Email"
+            app:hintTextColor="@color/blue"
+            app:boxStrokeColor="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:errorIconTint="@color/red"
+            app:errorTextColor="@color/red"
+            app:boxStrokeErrorColor="@color/red"
+            app:boxCornerRadiusTopStart="8dp"
+            app:hintEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_Email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/abel_regular"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/grey"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/abel_regular"
+                android:letterSpacing="0"
+                android:insetTop="0dp"
+                android:id="@+id/btnSkip"
+
+                android:layout_marginRight="15dp"
+                android:insetBottom="0dp"
+                android:textAlignment="textStart"
+                android:text="Skip"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="18dp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="8dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/abel_regular"
+                android:letterSpacing="0"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Next"
+                android:id="@+id/btnNext"
+                android:layout_marginLeft="15dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="18dp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/ic_arrow_right_small"
+                app:iconSize="20dp"
+                app:iconGravity="end"
+                app:iconTint="@color/blue" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

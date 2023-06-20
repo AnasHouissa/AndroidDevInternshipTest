@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/abel_regular"
+            android:gravity="center"
+            android:text="Who is going to use this device?"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="start"
+            android:text="The information from your child’s device will help us to assess their mental health, duration of sleep, places visited, used applications  etc.
+It also gives you the ability to block or allow installed applications"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="start"
+            android:text="Please follow the following steps: \n  1. Bring your child’s mobile phone\n 2. Scan this QR code with your child’s device camera\n 3. You will be redirected to the 4IN shield application download page\n 4. Once the application is installed, click Next "
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/qrcode"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/abel_regular"
+                android:letterSpacing="0"
+                android:id="@+id/btnSkip"
+                android:insetTop="0dp"
+                android:layout_marginRight="15dp"
+                android:insetBottom="0dp"
+                android:textAlignment="textStart"
+                android:text="Skip"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="18dp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="8dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/abel_regular"
+                android:letterSpacing="0"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Next"
+                android:id="@+id/btnNext"
+
+                android:layout_marginLeft="15dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="18dp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/ic_arrow_right_small"
+                app:iconSize="20dp"
+                app:iconGravity="end"
+                app:iconTint="@color/blue" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>
