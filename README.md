@@ -1,5 +1,5 @@
 # AndroidDevInternshipTest
-This repository contains my work for the technical test for an internship position at SmartConseil.
+This repository contains my work for the technical test for an internship position.
 
 TODO :
 This test consists of integrating graphical interfaces into a native Android mobile application. 
